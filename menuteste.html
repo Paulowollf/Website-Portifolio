@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <title>Document</title>
+</head>
+<style>
+    @charset 'UTF-8';
+    
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body{
+    background-color: lightgrey;
+}
+
+header{
+    background-color: rgb(185, 182, 182);
+}
+
+header, h1{
+    padding: 10px;
+    text-align: center;
+}
+menu{
+    display: block;
+    display: none;
+    
+}
+menu ul{
+    list-style-type: none;
+}
+    
+menu, ul, li, a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    background-color: rgb(53, 52, 52);
+    border-top: 2px solid gray;
+
+}
+
+menu ul li a:hover{
+    background-color: gray;
+}
+
+main{
+    width: 90vh;
+    background-color: white;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+article h2{
+    padding-bottom: 20px;
+}
+article p{
+    text-align: justify;
+    margin-bottom: 10px;
+    text-indent: 20px;
+}
+#burguer{
+    background-color: rgb(218, 218, 218);
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+#burguer:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+</style>
+<body>
+<header>
+    <h1>Meu site</h1>
+    <span id="burguer" class ="material-symbols-outlined" onclick="clickMenu()">menu
+        </span>
+    <menu id="itens">
+        <ul>
+            <li><a href="#">sobre min</a></li>
+            <li><a href="#">portifolio</a></li>
+            <li><a href="#">contrate-me</a></li>
+        </ul>
+    </menu>
+
+</header>
+
+<main>
+    <article>
+        <h2>Testando media query</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, cumque consequatur placeat voluptates vero unde ut cum! Laborum necessitatibus temporibus eveniet, corporis at voluptatum. Cumque, saepe. Aliquid recusandae ipsum provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis non libero delectus facere, animi ea cupiditate vitae quasi molestiae. Nam et consectetur velit dolorum libero cum molestias unde magnam vero!</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, cumque consequatur placeat voluptates vero unde ut cum! Laborum necessitatibus temporibus eveniet, corporis at voluptatum. Cumque, saepe. Aliquid recusandae ipsum provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis non libero delectus facere, animi ea cupiditate vitae quasi molestiae. Nam et consectetur velit dolorum libero cum molestias unde magnam vero!</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, cumque consequatur placeat voluptates vero unde ut cum! Laborum necessitatibus temporibus eveniet, corporis at voluptatum. Cumque, saepe. Aliquid recusandae ipsum provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis non libero delectus facere, animi ea cupiditate vitae quasi molestiae. Nam et consectetur velit dolorum libero cum molestias unde magnam vero!</p>
+    </article>
+   
+</main>
+<script>
+    function clickMenu() {
+        if (itens.style.display == 'block') {
+            itens.style.display = 'none'}
+            else {
+                itens.style.display ='block'
+            }
+    }
+</script>
+</body>
+</html>
