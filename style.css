@@ -19,45 +19,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
 
 
-button:focus,ul{
-    height: 250px;
-}
 
-@media (max-width: 700px) {
 
-    nav,
-    ul {
-        flex-direction: column;
-    }
 
-    ul {
-        text-align: center;
-        margin: 0;
-        height: 0;
-    }
-
-    nav {
-        padding: 0;
-        align-items: flex-start;
-    }
-
-    h1 {
-        margin: 10px;
-    }
-
-    button {
-        display: flex;
-    }
-
-    li,
-    ul {
-        width: 100%;
-    }
-
-    ul.li {
-        height: 260px;
-    }
-}
 body{}
 nav{
     text-align: center;
@@ -67,22 +31,7 @@ nav{
    
 }
 
-button{
-    background-color: red;
-    border: none;
-    display: flex;
-    color: aqua;
-    font-size: 30px;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-}
 
-
-
- button:hover{
-    color: yellow;
-}
 html{
     scroll-behavior: smooth;
 }

@@ -4,116 +4,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>Menu teste responsivo</title>
+    <style>
+        *{
+            margin: 0px;
+            padding:0px;
+            border:0px;
 
-    <title>Document</title>
+        } 
+
+        body{
+            background-color: rgb(128, 128, 128);
+        }
+
+        .artigo { 
+            width: 550px;
+            height: 450px;
+            background-color: rgb(243, 236, 236);
+            margin: auto;
+            text-align: justify;
+            padding: 10px;
+            margin-top: 25px;
+            
+        }
+        .artigo h2 {
+            text-align: center;
+        }
+
+        h1{
+            text-align: center;
+            padding: 10px;
+
+        }
+        nav{
+           
+            padding: 15px;
+            background-color: rgb(202, 202, 202);
+            width: 100%;
+            text-transform: uppercase;
+            
+            
+          
+        }
+        nav ul li{
+            display: inline-flex;
+            background-color: rgb(156, 156, 156) ;
+            padding: 10px;
+            
+           
+        }
+        nav ul li a {
+           margin: 10px;
+           text-decoration: none;
+           color: rgb(3, 3, 3);
+        }
+        nav ul li a:hover { 
+            text-decoration: underline;
+            color: rgb(243, 236, 236);
+        }
+           
+           
+    </style>
+
 </head>
-<style>
-    @charset 'UTF-8';
-    
-*{
-    margin: 0px;
-    padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-
-}
-
-body{
-    background-color: lightgrey;
-}
-
-header{
-    background-color: rgb(185, 182, 182);
-}
-
-header, h1{
-    padding: 10px;
-    text-align: center;
-}
-menu{
-    display: block;
-    display: none;
-    
-}
-menu ul{
-    list-style-type: none;
-}
-    
-menu, ul, li, a{
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    background-color: rgb(53, 52, 52);
-    border-top: 2px solid gray;
-
-}
-
-menu ul li a:hover{
-    background-color: gray;
-}
-
-main{
-    width: 90vh;
-    background-color: white;
-    margin: auto;
-    padding: 10px;
-    border-radius: 10px;
-}
-article h2{
-    padding-bottom: 20px;
-}
-article p{
-    text-align: justify;
-    margin-bottom: 10px;
-    text-indent: 20px;
-}
-#burguer{
-    background-color: rgb(218, 218, 218);
-    display: block;
-    text-align: center;
-    padding: 10px;
-}
-#burguer:hover{
-    background-color: white;
-    color: black;
-    cursor: pointer;
-}
-
-</style>
 <body>
-<header>
-    <h1>Meu site</h1>
-    <span id="burguer" class ="material-symbols-outlined" onclick="clickMenu()">menu
-        </span>
-    <menu id="itens">
+    <h1>Menu Responsivo</h1>
+    <nav>
         <ul>
-            <li><a href="#">sobre min</a></li>
-            <li><a href="#">portifolio</a></li>
-            <li><a href="#">contrate-me</a></li>
+            <li><a href="#">Categorias</a></li>
+            <li><a href="#">Fale Conosco   </a></li>
+            <li><a href="#">Home</a></li> 
+            <li><a href="#">Informações</a></li>   
         </ul>
-    </menu>
-
-</header>
-
-<main>
-    <article>
-        <h2>Testando media query</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, cumque consequatur placeat voluptates vero unde ut cum! Laborum necessitatibus temporibus eveniet, corporis at voluptatum. Cumque, saepe. Aliquid recusandae ipsum provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis non libero delectus facere, animi ea cupiditate vitae quasi molestiae. Nam et consectetur velit dolorum libero cum molestias unde magnam vero!</p>
-
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, cumque consequatur placeat voluptates vero unde ut cum! Laborum necessitatibus temporibus eveniet, corporis at voluptatum. Cumque, saepe. Aliquid recusandae ipsum provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis non libero delectus facere, animi ea cupiditate vitae quasi molestiae. Nam et consectetur velit dolorum libero cum molestias unde magnam vero!</p>
-
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, cumque consequatur placeat voluptates vero unde ut cum! Laborum necessitatibus temporibus eveniet, corporis at voluptatum. Cumque, saepe. Aliquid recusandae ipsum provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis non libero delectus facere, animi ea cupiditate vitae quasi molestiae. Nam et consectetur velit dolorum libero cum molestias unde magnam vero!</p>
-    </article>
+    </nav>
    
-</main>
-<script>
-    function clickMenu() {
-        if (itens.style.display == 'block') {
-            itens.style.display = 'none'}
-            else {
-                itens.style.display ='block'
-            }
-    }
-</script>
+    <div class="artigo">
+        <h2>Testando media Query</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, maxime temporibus. Aperiam accusantium dignissimos doloremque cupiditate odio! Tempora eum praesentium similique tempore natus vel amet ducimus consectetur incidunt, quisquam accusantium
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed et enim excepturi libero sequi velit perferendis numquam totam reiciendis iure iusto rem ducimus laborum odio rerum eligendi nisi, reprehenderit unde?
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur cumque, blanditiis quidem ullam earum ex debitis vel, delectus assumenda, id omnis dolorum consequuntur. Dolores corrupti officiis nisi quia harum aliquam.
+          Lorem ipsum dolor sit. 
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, fugiat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ipsa sapiente soluta sed alias tenetur voluptatum quos recusandae autem ullam ex sint est cumque consectetur porro modi, voluptates maiores quia?
+        </p>
+
+    </div>
+
+
 </body>
 </html>

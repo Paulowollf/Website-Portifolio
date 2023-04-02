@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="scrollreveal.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>index</title>
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap');
+        @font-face {
+            font-family:'abnes';
+            src: url('fontes\ utilizadas/abnes.otf');
+
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+
+        nav{
+            text-align: center;
+           
+        }
+
+        nav ul{
+            list-style: none;
+            padding: 10px;
+            background-color: black;
+            text-transform: uppercase;
+            display: flex;
+           
+            
+        }
+        nav ul li  {
+            display: flex;
+            margin: auto;
+           
+        }
+        nav ul li a{
+            color: white;
+            display: flex;
+            margin: auto;
+            text-decoration: none;
+            font-family: 'Montserrat Alternates', sans-serif;
+            font-weight: 700;
+            padding: 10px;
+            transition: background .9s;
+
+        }
+        nav ul li a:hover{
+            color: plum;
+        }
+     
+        .area-1{ /*container*/
+            width: 100%;
+            height: 100vh;
+            
+            box-shadow: inset 0px 0px 20px 1px black;
+            background-image: url('img/teste.png');
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+
+        }
+
+        
+
+        .area-2{
+            width: 100%;
+            margin: auto;
+            display: flex;
+            
+            position: relative;
+            text-align: center;
+            
+
+        }
+
+        .fotos1{
+            padding: 10px;
+            display: flex;
+            gap: 25px;
+            position: relative;
+            list-style: none;
+            margin: auto;
+            flex-wrap: wrap;
+           
+            
+            
+        }
+        .img2{
+            
+            width: 100%;
+            max-width: 250px;
+            height: 190px;
+            border-radius: 20px 10px;
+            display: flex;
+            margin: auto;
+           
+            box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.548);
+        }
+        .img2:hover{
+            content: 'ola';
+            
+            border: 1px dashed rgb(105, 105, 105);
+        }
+            
+    
+     
+
+
+
+
+        h1{
+            font-family: 'abnes';
+            font-size: 40px;
+            padding-top: 60px;
+            text-align: center;
+            color: rgb(20, 20, 20);
+            text-shadow: 2px 3px 5px rgba(255, 255, 255, 0.479);
+        }
+        h2{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 200;
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+
+        h3{
+            color: black;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: 'Montserrat';
+            margin-top: 90px;
+            margin: auto;
+            display: flex;
+        }
+        
+        
+        .text1{
+            background-color: #c7a7d317;
+           
+            
+            font-size:max(20px,2vw);
+            max-width: 450px;
+            height: 150px;
+            margin-top: 50px;
+            margin-left: 10%;
+            text-align: justify;
+            padding: 10px;
+            color: black;
+
+        }
+
+        section {
+           padding: 20vh;
+           border: 1px dashed black;
+          background-image: url(img/parrala3.png);
+          background-size: cover;
+          background-attachment: fixed;
+          background-position-x: left;
+           
+           
+        }
+
+        .section2{ /*entre em contato*/
+            padding: 20vh;
+            padding-top: 15vh;
+            text-align: center;
+            justify-content: center;
+        }
+        .section2 p{ /*entre em contato*/
+            padding: 20vh;
+            padding-top: 15vh;
+            text-align: center;
+            justify-content: center;
+        }
+        .img3{
+            display: flex;
+
+            
+            width:100%;
+            flex-wrap: wrap;
+            
+            
+            
+
+        }
+       
+        
+        #cubo{
+            width: 250px;
+            height: 250px;
+            padding: 10px;
+            margin: auto;
+            
+        }
+        .paraf{
+            padding: 10px;
+            min-height: 150px;
+            width: 100%;
+            max-width: 700px;
+            text-align: justify;
+            font-family: 'Montserrat';
+            letter-spacing: 2px;
+            font-size: 20px;
+            background-color: rgb(255, 255, 255);
+            font-weight: 500;
+            color: rgb(0, 0, 0);
+            text-shadow: 1px 2px 4px white;
+            border: 1px solid black;
+            
+        }
+
+            
+    </style>
+</head>
+<body >
+
+    <nav>
+        <ul>
+            <li><a href="#">sobre min</a></li>
+            <li><a href="#">portfolio</a></li>
+            <li><a href="#">Contrate-me</a></li>
+        </ul>
+    </nav>
+    <div class="area-1">
+        <div class="conteudo" id="img1">
+    
+            <h1>Paulo Monteiro</h1>
+            <h2>Designer Gráfico</h2>
+            <div class="basetext">
+                
+                <p class="text1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis neque blanditiis, obcaecati reiciendis est provident quam dolor saepe ipsam voluptatum atque! Incidunt nam eos earum, quidem placeat asperiores ratione vitae.</p>
+                    
+            </div>
+            
+        </div>
+       
+    </div>
+    
+    <div class="area-2"> <!--container-->
+        
+        <ul class="fotos1">
+            <li>
+                <div class="content"><img class="img2" id="bola" src="img/edits/portifolio1.png" alt="">
+                    <h4>Manipulaçao de imagem</h4>
+                </div>
+            </li>
+            
+            <li><img class="img2" id="quadrado" src="img/edits/portifolio2.png" alt=""></li>
+            <li><img class="img2" id="triangulo" src="img/edits/portifolio3.png" alt=""></li>
+            <li><img class="img2" id="triangulo" src="img/edits/portifolio4.png" alt=""></li>
+        </ul>
+
+    </div>
+
+    <section class="area-3"> 
+  
+        
+
+        <div class="img3">
+            
+            <img id="cubo" src="img/edits/brinquedo.png" alt="jpg">
+            <p class="paraf">Desde cedo, sempre fui apaixonado por design e montagem. Brincar com o Adobe Photoshop era um passatempo favorito. Quando cheguei aos 25 anos, que precisava me encaixar em algo. Foi então que decidi que queria transformar minha paixão   em uma carreira. estou me formando na universidade Claretianos. e venho me dedicando ao Design Gráfico e trabalhando  para aprimorar minhas habilidades e criar soluções visuais. É gratificante poder fazer algo que amo todos os dias.</p>
+        </div>
+    </section>
+    <script src="scrollreveal.js"></script>
+</body>
+</html>
