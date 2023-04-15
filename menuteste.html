@@ -5,11 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu teste responsivo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="mediaquery.css">
     <style>
+
+        /* 
+        pequenas telas: até 600px
+        Celular: de 600px até 768px
+        Tablet: de 768 até 992px
+        Grandes telas: Acima de 1200px */ 
+
+  
+
+
+
         *{
             margin: 0px;
             padding:0px;
-            border:0px;
 
         } 
 
@@ -18,17 +30,18 @@
         }
 
         .artigo { 
-            width: 550px;
-            height: 450px;
+           
             background-color: rgb(243, 236, 236);
             margin: auto;
             text-align: justify;
             padding: 10px;
             margin-top: 25px;
+            text-indent: 20px;
             
         }
         .artigo h2 {
             text-align: center;
+            
         }
 
         h1{
@@ -36,20 +49,41 @@
             padding: 10px;
 
         }
+
+        
+
+        #menuhamb {
+            display: block;
+            text-align: center;
+            padding: 10px;
+            cursor: pointer;
+
+        }
+
+        #menuhamb:hover{
+            background-color: white;
+
+        }
+
         nav{
-           
+            
             padding: 15px;
             background-color: rgb(202, 202, 202);
             width: 100%;
+            height: 200px;
             text-transform: uppercase;
+            display: none;
+        }
             
             
           
-        }
         nav ul li{
-            display: inline-flex;
-            background-color: rgb(156, 156, 156) ;
+            background-color: rgb(241, 241, 241) ;
             padding: 10px;
+            text-decoration: none;
+            list-style-type: none;
+            text-align: center;
+            border-top: 2px solid rgb(77, 77, 77);
             
            
         }
@@ -57,26 +91,36 @@
            margin: 10px;
            text-decoration: none;
            color: rgb(3, 3, 3);
+           padding: 5px;
+           
         }
         nav ul li a:hover { 
             text-decoration: underline;
             color: rgb(243, 236, 236);
         }
-           
+        
            
     </style>
 
 </head>
 <body>
     <h1>Menu Responsivo</h1>
-    <nav>
-        <ul>
-            <li><a href="#">Categorias</a></li>
-            <li><a href="#">Fale Conosco   </a></li>
-            <li><a href="#">Home</a></li> 
-            <li><a href="#">Informações</a></li>   
-        </ul>
-    </nav>
+    <span class="material-symbols-outlined" id="menuhamb" onclick="clickMenu()">
+        menu 
+    </span>
+    
+   <div class="menu">
+       
+           <nav id="itens">
+               <ul>
+                   <li><a href="#">Categorias</a></li>
+                   <li><a href="#">Fale Conosco   </a></li>
+                   <li><a href="#">Home</a></li>
+                   <li><a href="#">Informações</a></li>
+               </ul>
+           </nav>
+   </div>
+    
    
     <div class="artigo">
         <h2>Testando media Query</h2>
@@ -90,6 +134,18 @@
 
     </div>
 
+    <script>
+        function clickMenu(){
+          if (itens.style.display == 'block')
+            {
+                itens.style.display = 'none'
+            }
+            else {
+                itens.style.display = 'block'
+            }
 
+        }
+    </script>
 </body>
+
 </html>

@@ -8,21 +8,52 @@
     <script src="scrollreveal.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <title>index</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />  <!--Google Icons-->
     
 </head>
-<body >
-     
-    <header>
-        <nav>
-        
+<style>
+    #burguer { 
+        align-items: center;
+        color: red;
+        text-align: center;
+        display: block;
+        cursor: pointer;
+    }
+    @media screen and (min-width:768px){ 
+        #burguer{ 
+            color: blue;
+            display: none;
+        }
+       
+        nav{ 
+            display: block;
+        }
+
+        nav ul li {
+            display: inline-block;
+           
+            
+        }
+       
+    }
+
+</style>
+<body onresize="mudouoTamanho">
+     <header>
+
+        <span class="material-symbols-outlined" id="burguer" onclick="clickMenu()">
+            menu
+            </span>
+        <nav id="itens">
             <ul>
+                
+                        <li>
+                            <a class="hover" href="#sessao1">sobre min</a></li>
+                        <li>
+                            <a class="hover" href="#sessao2">portfolio</a></li>
+                        <li>
+                            <a class="hover" href="#sessao3">Contrate-me</a></li>
         
-                <li>
-                    <a class="hover" href="#sessao1">sobre min</a></li>
-                <li>
-                    <a class="hover" href="#sessao2">portfolio</a></li>
-                <li>
-                    <a class="hover" href="#sessao3">Contrate-me</a></li>
             </ul>
         </nav>
     </header>
@@ -130,8 +161,32 @@
     <Footer>
         <h5>Site criado e desenvolvido usando HTML5,CSS3,APIs</h5>
     </Footer>
+    <script>
+        
+        function mudouoTamanho() { 
+            if (window.innerWidth = 768) { 
+                itens.style.display = 'block'
+            } else { 
+                itens.style.display = 'none'
+            }
+        }
 
+        function clickMenu(){
+          if (itens.style.display == 'block')
+            {
+                itens.style.display = 'none'
+            }
+            else {
+                itens.style.display = 'block'
+            }
 
-    <script src="scrollreveal.js"></script>
+        }
+
+       
+
+    </script>
+
+    <script src="scrollreveal.js">
+    </script>
 </body>
 </html>
