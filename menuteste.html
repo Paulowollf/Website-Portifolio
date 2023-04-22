@@ -99,6 +99,7 @@
             color: rgb(243, 236, 236);
         }
         
+     
            
     </style>
 
@@ -109,7 +110,7 @@
         menu 
     </span>
     
-   <div class="menu">
+   <div class="menu" onresize="mudouTamanho()">
        
            <nav id="itens">
                <ul>
@@ -135,7 +136,7 @@
     </div>
 
     <script>
-        function clickMenu(){
+        function clickMenu() {
           if (itens.style.display == 'block')
             {
                 itens.style.display = 'none'
@@ -145,6 +146,18 @@
             }
 
         }
+
+        function mudouoTamanho() {
+            if (window.innerWidth = 768) { 
+                itens.style.display = 'block'
+            } else { 
+                itens.style.display = 'none'
+            }
+
+
+        }   
+
+
     </script>
 </body>
 

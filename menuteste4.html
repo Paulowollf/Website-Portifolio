@@ -1,0 +1,132 @@
+  <!DOCTYPE html>
+  <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+  </head>
+  <style> 
+  * { 
+    padding: 0px;
+    margin: 0px;
+  }
+
+  body{ 
+    background-color: black;
+    overflow-x: hidden;
+  }
+
+  .nav{ 
+    background-color: blueviolet;
+    padding: 40px;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+  }
+  .nav ul li a { 
+    text-decoration: none  ;
+    gap: 100px;
+    color: white;
+    display: flex;
+  }
+  .nav ul { 
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 100px;
+    list-style-type: none; 
+    text-transform: uppercase;
+    
+  }
+
+  .nav ul li:hover { 
+    text-decoration: underline yellow;
+    transition: 0.2s;
+    display: flex;
+
+  }
+  
+  #burguer{ 
+    display: none;
+  }
+
+
+  header{
+    width: 100%;
+  }
+
+  @media  (max-width:768px) {
+    #burguer{ 
+    color: white;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+    display: block;
+  }
+
+  .nav ul.open{ 
+    left: 0px;
+    transition: ease-out 1s;
+    top: 90px;
+    box-shadow: 0px 10px 20px black;
+  }
+
+  .nav ul{ 
+    display: flex;
+    position: absolute;
+    background-color: rgb(255, 0, 234);
+    top: -100%;
+    left: 0px;
+    flex-direction: column;
+    margin: auto;
+    gap: 50px;
+    width: 100%;
+    align-items: center;
+  }
+  .nav ul li { 
+    
+  }
+
+    
+  }
+
+  </style>
+  <body>
+    <header>
+     
+      <menu class="nav">
+          <ul class="open">
+              
+                      <li>
+                          <a class="hover" href="#sessao1">sobre min</a></li>
+                      <li>
+                          <a class="hover" href="#sessao2">portfolio</a></li>
+                      <li>
+                          <a class="hover" href="#sessao3">Contrate-me</a></li>
+      
+          </ul>
+          <span class="material-symbols-outlined" id="burguer" onclick='menuShow()'>
+            menu 
+            </span>
+           
+      </menu>
+  </header>  
+  <script>
+    function menuShow(){
+      let ul = document.querySelector('.nav ul');
+
+if (ul.classList.contains("open")) {
+    ul.classList.remove("open");
+    
+} else {
+    ul.classList.add("open");
+}
+    }
+    
+    
+  </script>  
+  </body>
+  </html>

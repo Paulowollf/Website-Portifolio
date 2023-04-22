@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+</head>
+
+    <style>
+        
+        *{ 
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        body{ 
+            background-color: gray;
+
+        }
+        menu { 
+            justify-content: space-around;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            background-color: rgb(197, 197, 197);
+            padding: 1.4rem 5rem;
+        }
+        menu ul :hover {
+            color: red
+        }
+        menu ul { 
+            display: flex;
+            align-items: center;
+        }
+        menu ul li { 
+            list-style-type: none;
+            margin: 10px;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+        
+        menu ul li a { 
+            text-decoration: none;
+            
+        }
+        #burguer{ 
+            display: none;
+            cursor: pointer;
+        }
+       @media (max-width: 768px) { 
+        #burguer{
+            display: block;
+        }
+        .nav ul.open{
+            left: 0;
+            transition: 0.2s;
+        }
+       
+        menu ul {
+              position: absolute;
+              top: 40px;
+              justify-content: center;
+              display: flex;
+              left: -100%;
+              margin-bottom: 250px;
+              align-items: center;
+              flex-direction: column;
+              height: 200px;   
+              width: 100%;
+              background-color: rgb(197, 197, 197);
+                     }
+        menu ul li { 
+
+        }
+              
+
+       }
+    </style>
+
+
+<body>
+    <header>
+        <menu class="nav">
+            <ul class="open">
+                
+                        <li>
+                            <a class="hover" href="#sessao1">sobre min</a></li>
+                        <li>
+                            <a class="hover" href="#sessao2">portfolio</a></li>
+                        <li>
+                            <a class="hover" href="#sessao3">Contrate-me</a></li>
+        
+            </ul>
+            <span class="material-symbols-outlined" id="burguer" onclick='menuShow()'>
+                menu 
+                </span>
+        </menu>
+    </header>    
+    <script>
+        function menuShow(){
+            let ul = document.querySelector('.nav ul');
+
+            if (ul.classList.contains("open")) {
+                ul.classList.remove("open");
+            } else {
+                ul.classList.add("open");
+            }
+        }
+    </script>
+</body>
+</html>

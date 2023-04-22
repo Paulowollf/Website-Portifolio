@@ -12,40 +12,76 @@
     
 </head>
 <style>
-    #burguer { 
-        align-items: center;
-        color: red;
-        text-align: center;
+    menu ul {
+    text-align: center;
+    width: 100%;
+    justify-content: space-around;
+    background-color: rgb(0, 0, 0);
+    display:flex;
+    flex-direction: row;
+    padding: 5px;
+    height: 80px;
+    align-items: center;
+}
+
+menu ul{
+    list-style: none;
+    text-transform: uppercase;
+}
+   
+#burguer{
+
+    display: none;
+}
+        
+@media (max-width:768px) {
+
+    #burguer{
         display: block;
+        color: rgb(255, 255, 255);
+        text-align: center;
         cursor: pointer;
-    }
-    @media screen and (min-width:768px){ 
-        #burguer{ 
-            color: blue;
-            display: none;
-        }
-       
-        nav{ 
-            display: block;
-        }
-
-        nav ul li {
-            display: inline-block;
-           
-            
-        }
-       
+        background-color: black;
+        
     }
 
+    menu ul.open{
+        top: 24px;
+        transition: ease-out 2s;
+        left: 0px;
+    }
+
+    menu ul  {
+        display: flex;
+        flex-direction: column;
+        top: -100%;
+        left: 0px;
+        gap: 10px;
+        align-items: center;
+        height: 150px;
+        position: absolute;
+        background-color: rgb(10, 10, 10);
+    }
+    menu ul li a {
+        padding: 10px;
+    }
+}    
+
+   
+
+   
 </style>
-<body onresize="mudouoTamanho">
+<body >
      <header>
-
-        <span class="material-symbols-outlined" id="burguer" onclick="clickMenu()">
+        <span class="material-symbols-outlined" id="burguer" onclick="menuShow()"
+        >
             menu
-            </span>
-        <nav id="itens">
-            <ul>
+        </span>
+         <menu id="itens">
+             <ul class="open">
+                
+
+        
                 
                         <li>
                             <a class="hover" href="#sessao1">sobre min</a></li>
@@ -55,7 +91,8 @@
                             <a class="hover" href="#sessao3">Contrate-me</a></li>
         
             </ul>
-        </nav>
+         
+        </menu>
     </header>
     <div class="area-1">
         <div class="conteudo" id="img1">
@@ -161,27 +198,19 @@
     <Footer>
         <h5>Site criado e desenvolvido usando HTML5,CSS3,APIs</h5>
     </Footer>
+
+    
+
     <script>
-        
-        function mudouoTamanho() { 
-            if (window.innerWidth = 768) { 
-                itens.style.display = 'block'
-            } else { 
-                itens.style.display = 'none'
-            }
-        }
+       
+     function menuShow() { 
+        let ul = document.querySelector('menu ul');
+        if (ul.classList.contains ('open')){
+            ul.classList.remove ('open');}
 
-        function clickMenu(){
-          if (itens.style.display == 'block')
-            {
-                itens.style.display = 'none'
-            }
-            else {
-                itens.style.display = 'block'
-            }
+            else {(ul.classList.add ('open'));}
 
-        }
-
+     }
        
 
     </script>
@@ -189,4 +218,6 @@
     <script src="scrollreveal.js">
     </script>
 </body>
+
+
 </html>
