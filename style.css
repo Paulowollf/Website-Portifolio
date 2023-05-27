@@ -28,7 +28,27 @@ html{
     scroll-behavior: smooth;
 }
 
+#sessao2{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin: auto;
+    position: relative;
+   
+}
 
+.containers2{
+    justify-content: center;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin: auto;
+    position: relative;
+   
+}
 
 
 
@@ -75,9 +95,9 @@ menu ul li a:hover{
     width: 100%;
     margin: auto;
     display: flex;
-    
     position: relative;
     text-align: center;
+    justify-content: center;
     
 
 }
@@ -102,7 +122,7 @@ menu ul li a:hover{
     border-radius: 20px 10px;
     display: flex;
     margin: auto;
-    justify-content: ;
+   
     box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.548);
 }
 .img2:hover{
@@ -146,19 +166,22 @@ h3{
 
 
 .text1{
-    background-color: #c7a7d317;
+    background-color: #aa97b117;
     
     text-transform: uppercase;
-    font-size:max(20px,2vw);
+    font-size:max(30px,2vw);
     font-weight: 900;
     font-family: 'Montserrat';
     max-width: 450px;
-    height: 150px;
+    height: 200px;
+    text-shadow: 1px 2px 5px rgba(51, 51, 51, 0.89);
     margin-top: 50px;
     margin-left: 10%;
     text-align: left;
-    padding: 10px;
-    color: rgb(23, 209, 255);
+    padding: 30px;
+    border: 1px solid black;
+    color: rgb(238, 237, 237);
+    box-shadow: 5px 3px 4px rgba(26, 26, 26, 0.308);
 
 }
 span{
