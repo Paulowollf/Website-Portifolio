@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="scrollreveal.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>index</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <!--Google Icons-->
+
+    <style>
+        menu ul {
+            text-align: center;
+            width: 100%;
+            justify-content: space-around;
+            background-color: rgb(0, 0, 0);
+            display: flex;
+            flex-direction: row;
+            padding: 5px;
+            height: 80px;
+            align-items: center;
+        }
+
+        menu ul {
+            list-style: none;
+            text-transform: uppercase;
+        }
+
+        #burguer {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .site-off-mobile {
+                display: none;
+            }
+
+            #burguer {
+                display: block;
+                color: rgb(255, 255, 255);
+                text-align: center;
+                cursor: pointer;
+                background-color: black;
+            }
+
+            menu ul.open {
+                top: 24px;
+                transition: ease-out 2s;
+                left: 0px;
+            }
+
+            menu ul {
+                display: flex;
+                flex-direction: column;
+                top: -100%;
+                left: 0px;
+                gap: 10px;
+                align-items: center;
+                height: 150px;
+                position: absolute;
+                background-color: rgb(10, 10, 10);
+            }
+
+            menu ul li a {
+                padding: 10px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <span class="material-symbols-outlined" id="burguer" onclick="menuShow()">
+            menu
+        </span>
+        <menu id="itens">
+            <ul class="open">
+                <li><a class="hover" href="#sessao1">sobre min</a></li>
+                <li><a class="hover" href="#sessao2">portfolio</a></li>
+                <li><a class="hover" href="#sessao3">Contrate-me</a></li>
+            </ul>
+        </menu>
+    </header>
+    <div class="site-off-mobile">
+        <div class="area-1">
+            <div class="conteudo" id="img1">
+                <h1>Paulo Monteiro</h1>
+                <h2>Designer Gráfico</h2>
+                <div class="basetext">
+                    <p class="text1">“Estar em constante movimento faz você estar em constante mudanças”</p>
+                </div>
+            </div>
+        </div>
+        <div class="containers2">
+            <div class="area-2" id="sessao2">
+                <!--container-->
+                <ul class="fotos1">
+                    <!--container2-->
+                    <li>
+                        <div class="content">
+                            <a href="man.html" target="_blank"><img class="img2" id="bola" src="img/edits/portifolio

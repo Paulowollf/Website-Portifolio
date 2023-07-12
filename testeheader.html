@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texte meio</title>
+</head>
+<style>
+    * { 
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    @media (min-width:768px) {
+    
+   
+    header{ 
+        width: 100vw;
+        height: 50vh;
+        background-color: antiquewhite;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    img{ 
+        width: 250px;
+       
+    }
+    div {
+        position: absolute;
+        text-align: center;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        
+    }
+        } 
+
+        @media (max-width:768px)
+        {
+            .desktop{ 
+                display: none;
+            }
+
+            header{ 
+        width: 100vw;
+        height: 50vh;
+        background-color: rgb(226, 130, 4);
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    img{ 
+        width: 250px;
+       
+    }
+    div {
+        position: absolute;
+        text-align: center;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        
+    }
+
+        }
+</style>
+<body>
+    <div class="desktop">
+        <header >
+            <div>
+                <h1>Paulo Monteiro </h1>
+                <img src="img/perfilmobile.png" alt="">
+            </div>
+        </header>
+    </div>
+
+
+    <div class="mob">
+        <header >
+            <div>
+                <h1>Paulo Monteiro </h1>
+                <img src="img/perfilmobile.png" alt="">
+            </div>
+        </header>
+    </div>
+
+
+
+
+
+</body>
+</html>
