@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+      #container {
+  display: flex;
+  width: 100%;
+  overflow-x: scroll;
+  scroll-behavior: smooth; /* Suaviza a rolagem */
+  text-align: center;
+  gap: 10px;
+  
+}
+
+.quadro {
+  width: 200px;
+  height: 200px;
+  flex-shrink: 0;
+  gap: 10px;
+}
+
+#quadro1{ 
+   
+ width: 200px;
+ height: 200px;
+ background-color: rgb(0, 100, 187);
+  flex-shrink: 0;
+
+}
+
+#quadro2{ 
+   
+   width: 200px;
+   height: 200px;
+   background-color: rgb(103, 0, 187);
+    flex-shrink: 0;
+  
+  }
+
+#btnEsquerda,
+#btnDireita {
+  position: fixed;
+  top: 10%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+}
+
+#btnEsquerda {
+  left: 10px;
+}
+
+#btnDireita {
+  right: 10px;
+}
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="quadro" id="quadro1">Quadro 1</div>
+        <div class="quadro" id="quadro2">Quadro 2</div>
+        <div class="quadro" id="quadro3">Quadro 3</div>
+        <div class="quadro" id="quadro4">Quadro 4</div>
+      </div>
+      <button id="btnEsquerda">←</button>
+      <button id="btnDireita">→</button>
+      
+
+    <script>
+       const btnEsquerda = document.getElementById('btnEsquerda');
+const btnDireita = document.getElementById('btnDireita');
+const container = document.getElementById('container');
+
+btnEsquerda.addEventListener('click', () => {
+  container.scrollLeft -= 200; // Desloca o conteúdo para a esquerda
+});
+
+btnDireita.addEventListener('click', () => {
+  container.scrollLeft += 200; // Desloca o conteúdo para a direita
+});
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>versao mobile</title>
+
+    <style> 
+        
+
+        
+         @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Montserrat:wght@200;400;600&display=swap');
+        
+         @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap');
+        
+         @font-face {
+             font-family:'abnes';
+            src: url('fontes\ utilizadas/abnes.otf');
+
+                }
+
+        @media (max-width:768px) { 
+            *{padding: 0px;
+                margin: 0px;
+                box-sizing: border-box; 
+                font-family: "Montserrat";
+               
+
+                }
+
+
+
+
+            body{ 
+                font-weight:600;
+            }
+
+            ul{ 
+                display: flex;
+                justify-content: space-around;
+                padding: 10px;
+                font-weight: "600";
+                background-color: black;
+                
+                
+            }
+            ul li { 
+                text-transform: uppercase;
+                display: flex;
+                flex-direction: row;
+            }
+            ul li a { 
+                color: white;
+                text-decoration: none;
+
+                
+            }
+
+        h1{
+            font-family: "abnes";
+            text-align: center;
+            margin-top: 25px;
+            text-indent: 25px;
+            
+        }
+        section{ 
+            display: flex;
+            flex-direction: column; 
+            gap: 15px;
+            position: relative;
+            
+        }
+
+        .perfil{ 
+            width: 150px;
+            margin: auto;
+        }
+        div p {
+            text-align: center;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            font-weight: 400;
+            position: relative;
+        }
+
+        article{ 
+            width: 100%;
+            height: 300px;
+            background-image: url(img/teste1.png);
+            background-size: cover;
+        }
+    }
+
+</style>
+</head>
+<body>
+    <Header> 
+        <ul>
+            <li><a href="#">contato</a></li>
+            <li><a href="#">Trabalhos</a></li>
+            <li><a href="#">Sobre me </a></li>
+            </ul>
+        </Header>
+  <Section>
+    <h1>Paulo Monteiro</h1>
+    <img src="img/perfilmobile.png" alt="jpg" class="perfil">
+    <div> 
+        <p>"Estar em Constante Movimento <br>faz você estar em constante mudança"</p>
+    </div>
+   </Section>
+
+   <article>
+    <div>Trabalhos</div>
+
+    </article>
+
+
+
+
+
+</body>
+</html>

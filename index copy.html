@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="scrollreveal.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>index</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />  <!--Google Icons-->
+    
+</head>
+<style>
+    menu ul {
+    text-align: center;
+    width: 100%;
+    justify-content: space-around;
+    background-color: rgb(0, 0, 0);
+    display:flex;
+    flex-direction: row;
+    padding: 5px;
+    height: 80px;
+    align-items: center;
+}
+
+menu ul{
+    list-style: none;
+    text-transform: uppercase;
+}
+   
+#burguer{
+
+    display: none;
+} 
+
+img{ 
+    display: none;
+}
+
+        
+@media (max-width:768px) {
+  
+    .site-off-mobile{ 
+        display: none;
+    }
+    #burguer{
+        display: block;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        cursor: pointer;
+        background-color: black;
+        
+    }
+
+    menu ul.open{
+        top: 24px;
+        transition: ease-out 2s;
+        left: 0px;
+    }
+
+    menu ul  {
+        display: flex;
+        flex-direction: column;
+        top: -100%;
+        left: 0px;
+        gap: 10px;
+        align-items: center;
+        height: 150px;
+        position: absolute;
+        background-color: rgb(10, 10, 10);
+    }
+    menu ul li a {
+        padding: 10px;
+    }
+}    
+
+   
+
+   
+</style>
+<body >
+     <header>
+        <span class="material-symbols-outlined" id="burguer" onclick="menuShow()"
+        >
+            menu
+        </span>
+         <menu id="itens">
+             <ul class="open">
+                
+
+        
+                
+                        <li>
+                            <a class="hover" href="#sessao1">sobre min</a></li>
+                        <li>
+                            <a class="hover" href="#sessao2">portfolio</a></li>
+                        <li>
+                            <a class="hover" href="#sessao3">Contrate-me</a></li>
+        
+            </ul>
+         
+        </menu>
+    </header>
+    <div class="site-off-mobile">
+        <div class="area-1">
+            <div class="conteudo" id="img1">
+
+                <h1>Paulo Monteiro</h1>
+                <h2>Designer Gráfico</h2>
+                <img src="img/perfilmobile.png" alt="" id="imgmob">
+                
+                <div class="basetext">
+        
+                    <p class="text1">“Estar em constante movimento faz você estar em constante mudanças”
+                    </p>
+                    
+                </div>
+        
+            </div>
+        
+        </div>
+    
+        
+        <div class="containers2">
+            <div class="area-2" id="sessao2"> <!--container-->
+        
+                <ul class="fotos1"> <!--container2-->
+                    <li>
+                        <div class="content">
+                            <a href="man.html" target="_blank"><img class="img2" id="bola" src="img/edits/portifolio1.png" alt=""></a>
+                            <div class="legenda">
+                                <h4>Manipulaçao de imagem</h4>
+                            </div>
+                        </div>
+                    </li>
+        
+                    <li>
+                        <div class="content">
+                            <a href="social.html" target="_blank">
+                                <img class="img2" id="quadrado" src="img/edits/portifolio2.png" alt=""></a>
+                            <div class="legenda" id="lg1">
+                                <h4>social media</h4>
+        
+                            </div>
+        
+                        </div>
+        
+                    </li>
+                            <li>
+                                <div class="content">
+                                    <a href="logo.html"><img class="img2" id="triangulo" src="img/edits/portifolio3.png" alt=""></a>
+                                    <div class="legenda" id="lg2">
+                                        <h4>Logotipos</h4>
+                                    </div>
+                                </div>
+                            </li>
+        
+        
+        
+                    <li>
+                        <div class="content"> <!--Esse é o relative-->
+                            <a href="mani.html" target="_blank"><img class="img2" id="triangulo" src="img/edits/portifolio4.png" alt=""></a>
+                            <div class="legenda" id="lg3"> <!--e esse o absolute-->
+                                <h4>Experiências</h4>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <section class="area-3" id="sessao1">
+        
+            <div class="img3">
+        
+                <img id="cubo" src="img/edits/brinquedo.png" alt="jpg">
+                <p class="paraf">Desde cedo, sempre fui apaixonado por design e montagem. Brincar com o Adobe Photoshop era um passatempo favorito. Quando cheguei aos 25 anos, que precisava me encaixar em algo. Foi então que decidi que queria transformar minha paixão   em uma carreira. estou me formando na universidade Claretiano. e venho me dedicando ao Design Gráfico e trabalhando  para aprimorar minhas habilidades e criar soluções visuais. É gratificante poder fazer algo que amo todos os dias.</p>
+            </div>
+        </section>
+        <div class="section2" id="sessao3">
+                <p>Gostou do Meu trabalho ?
+                    <p class="caixabaixa">Clique no T-Rex Dançarino </p>
+                </p>
+        
+                <div class="dino">
+                    <a href="https://wa.me/5519992915420?text=Olá gostaria de fazer um orçamento" target="_blank"
+                        title="Olá vamos nos conhecer Melhor">
+                        <img src="img/dino.gif" alt="png">
+                    </a>
+        
+                    </div>
+        
+        
+                    <div class="redes">
+                        <div class="redes1">
+                            <img src="img/linkedin.png" alt="linkedin" title="Acese agora">
+                            <img src="img/instagram.png" alt="">
+                        </div>
+                    </div>
+        </div>
+        <Footer>
+            <h5>Site criado e desenvolvido usando HTML5,CSS3,APIs</h5>
+        </Footer>
+    </div>
+
+    
+
+    <script>
+       
+     function menuShow() { 
+        let ul = document.querySelector('menu ul');
+        if (ul.classList.contains ('open')){
+            ul.classList.remove ('open');}
+
+            else {(ul.classList.add ('open'));}
+
+     }
+       
+
+    </script>
+
+    <script src="scrollreveal.js">
+    </script>
+</body>
+
+
+</html>
