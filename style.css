@@ -253,25 +253,6 @@ section {
     margin: auto;
     
 }
-.paraf{
-    padding: 10px;
-    min-height: 150px;
-    width: 100%;
-    max-width: 700px;
-    text-align: justify;
-    font-family: 'Montserrat';
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    letter-spacing: 2px;
-    font-size: 100%;
-    background-color: rgb(255, 255, 255);
-    font-weight: 500;
-    color: rgb(0, 0, 0);
-    text-shadow: 1px 2px 4px white;
-    border: 1px solid black;
-    
-}
 
 
 .content{

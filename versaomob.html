@@ -107,6 +107,7 @@ html, body {
   padding: 0;
   width: 100%;
   height: 100%;
+  overflow-x: hidden;
 }
 
 
@@ -133,7 +134,8 @@ input[type=radio] {
   max-width: 700px;
   max-height: 800px;
   min-height: 600px;
-
+  background-size: cover;
+  background-position: left center;
   margin-top: 25px;
   height: 800px;
   transform-style: preserve-3d;
@@ -279,25 +281,38 @@ img {
 
 
 
+.basetrabalho{ 
+  background-color: #646464;
+  justify-content: center;
+  text-align: center;
+}
+
+.sessao3{ 
+  width: 800px;
+  min-width: 800px;
+}
 h3{ 
-  margin-bottom: 0px;
-  position: absolute;
+  text-transform: uppercase;
+  display: flex;
+  margin: auto;
+  color: white;
+  text-align: center;
+  justify-content: center;
   font-size: 16px;
-  margin-top:65px ;
-  width: 450px;
-  margin-left: 35px;
+  width: 100%;
   font-weight: 400;
 
 }
 
 h5{ 
+  color: white;
   text-transform: capitalize;
-  margin-left: 35px;
-  font-size: 40px;
+  font-size: 25px;
   font-family: "Montserrat";
   font-weight:700;
-  margin-top: 10px;
-  position: absolute;
+  margin-top: 0px;
+  position: relative;
+
 }
 
 
@@ -321,8 +336,23 @@ h4{
   width: 90px;
   margin: auto;
 }
-
-    }
+.sessao33 { 
+  width: 100%;
+  height: 500px;
+  background-image: url(img/last1.png);
+  background-size: cover;
+  background-color: #646464;
+}
+.dinobase{ 
+  width: 100%;
+  margin-top: 20px;
+}
+#dinoo{
+  
+  display: flex;
+  margin: auto;
+  width: 150px;
+  }
 
 </style>
 </head>
@@ -354,6 +384,10 @@ h4{
     <div class="logos">
      <img src="img/css.png" alt="">
      <img src="img/html5.png" alt="">
+     <br>
+     <img src="img/adobe illustratro.png" alt="">
+     <img src="img/photo.png" alt="">
+     <div style="color: #646464;"; style="background-color: #403d40;width: 100px;">até que me encontrei no pacote da adobe, e pude saber aonde eu me encaixava Profissionalmente</div>
     </div>
     <div class="container" id="carrosel">
       <input type="radio" name="slider" id="item-1" checked>
@@ -380,19 +414,29 @@ h4{
   
     <div>
       <div class="sessao3">
-        <h5>Formação</h5>
-        <h3>Estou me formando em Designer Gráfico, <br>Pela Instituição de Ensino 
-          Claretiano
-        </h3>
-        <img src="img/last2.png" alt="">
+        <div class="basetrabalho">
+          <h5>Gostou do meu trabalho ? </h5>
+          <h3>Clique no T-rex Dançarino para me contratar
+          </h3>
+        </div>
+       
       </div>
      
-
-      <div>
-
-      </div>
-
     </div>
+    <div class="sessao33">
+      <div class="dinobase"><img src="img/dino.gif" alt="" id="dinoo" ></div>
+    </div>
+    
+      
+      
+        
+        <footer>
+          esse site foi desenvolvido totalmente em html5 e css3
+        </footer>
+   
+
+      
+
  
   
 
