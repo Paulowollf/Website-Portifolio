@@ -34,15 +34,16 @@ menu ul{
     display: none;
 } 
 
-img{ 
-    display: none;
-}
 
         
 @media (max-width:768px) {
   
     .site-off-mobile{ 
         display: none;
+    }
+    body{ 
+        overflow-x: hidden;
+        overflow-y: hidden;
     }
     #burguer{
         display: block;
@@ -72,7 +73,23 @@ img{
     }
     menu ul li a {
         padding: 10px;
+        
     }
+    #menu1{
+        display: none;
+
+    }
+
+    iframe{ 
+        width: 100vw;
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: hidden;
+
+    }
+    iframe::-webkit-scrollbar{ 
+        display: none;
+    }    
 }    
 
    
@@ -80,7 +97,7 @@ img{
    
 </style>
 <body >
-     <header>
+     <header id="menu1">
         <span class="material-symbols-outlined" id="burguer" onclick="menuShow()"
         >
             menu
@@ -108,7 +125,6 @@ img{
 
                 <h1>Paulo Monteiro</h1>
                 <h2>Designer Gráfico</h2>
-                <img src="img/perfilmobile.png" alt="" id="imgmob">
                 
                 <div class="basetext">
         
@@ -203,7 +219,9 @@ img{
         </Footer>
     </div>
 
-    
+    <div>
+        <iframe src="versaomob.html" frameborder="0"></iframe>
+    </div>
 
     <script>
        
