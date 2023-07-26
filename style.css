@@ -171,10 +171,10 @@ h3{
     background-color: #aa97b117;
     
     text-transform: uppercase;
-    font-size:max(30px,2vw);
+    font-size:2em; 
     font-weight: 900;
     font-family: 'Montserrat';
-    max-width: 450px;
+    max-width: 550px;
     height: 200px;
     text-shadow: 1px 2px 5px rgba(51, 51, 51, 0.89);
     margin-top: 50px;
@@ -186,6 +186,40 @@ h3{
     box-shadow: 5px 3px 4px rgba(26, 26, 26, 0.308);
 
 }
+
+.video{ 
+    width: 100%;
+    height: 500px;
+    background-image: url(img/teste1.png);
+    background-size: cover;   
+}
+
+.logos { 
+    text-align: center;
+}
+.logos img { 
+    width: 100%;
+    max-width: 150px;
+    justify-content: center;
+    text-align: center;
+}
+.portifolio{ 
+    text-align: center;
+    padding: 15px;
+    font-size: 1.2em;
+    font-family: "Moontserrat", sans-serif;
+    text-indent: 0px;
+    font-weight: 700;
+    color: gray;
+}
+.portifoliotext2{ 
+    font-size: 1.2em;
+    font-weight: 700;
+    color: rgba(128, 128, 128, 0.623);
+
+}
+
+
 span{
     color: black;
     text-shadow: 1px 1px 5px rgb(255, 255, 255);
