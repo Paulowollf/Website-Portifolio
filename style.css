@@ -105,7 +105,7 @@ menu ul li a:hover{
 }
 
 .fotos1{
-    padding: 10px;
+    padding: 25px;
     display: flex;
     gap: 25px;
     position: relative;
@@ -245,22 +245,24 @@ section {
     
     
 }
+.section2 p { 
+    padding: 10px;
+}
 .section2 p{ /*entre em contato*/
-    
+    color: white;
     font-family: 'Montserrat';
     font-weight: 900;
-    text-transform: uppercase;
     display: flex;
-    margin: auto;
+    margin: 10px;
     text-align: center;
     display: flex;
     margin: auto;
     flex-direction: column;
-    
-    background-color: rgb(250, 250, 250);}
-    .caixabaixa{ /*entre em contato*/
-        text-transform: lowercase;
-        color: rgb(116, 116, 116);
+    box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.425);
+    background-color: rgb(100, 100, 100);}
+    .section2 .caixabaixa { /*entre em contato*/
+        text-transform: uppercase;
+        color: rgb(255, 255, 255) ;
         font-family: 'Montserrat';
         font-weight: 300;
 

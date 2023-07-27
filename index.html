@@ -34,52 +34,23 @@ menu ul{
     display: none;
 } 
 
-img{ 
+@media (min-width:768px){
+iframe{ 
     display: none;
 }
+}
+
 
         
 @media (max-width:768px) {
-    h1{ 
-        font-size: 30px;
-        text-align: center;
-        margin-bottom:50px;
+  
+    .site-off-mobile{ 
+        display: none;
     }
-    h2{ 
-        text-align: center;
-        padding: 10px;
+    body{ 
+        overflow-x: hidden;
+        overflow-y: hidden;
     }
-    .area-1 {
-        width: 100%;
-        height: 50vh;
-        text-align: center;
-        background-image: none;
-    }
-    .conteudo { 
-        margin: auto;
-        text-align: center;
-       
-    }
-    #imgmob {
-        margin: auto;
-        width: 250px;
-        display: block;
-
-    }
-    img{ 
-        margin: auto;
-        width: 150px;
-     
-    }
-    .containers2{ 
-        margin-top: 400px;
-        position: relative;
-        left: 50%;
-        top:50%;
-        transform: translate(-50%, 50%);
-
-    }
-    
     #burguer{
         display: block;
         color: rgb(255, 255, 255);
@@ -108,7 +79,23 @@ img{
     }
     menu ul li a {
         padding: 10px;
+        
     }
+    #menu1{
+        display: none;
+
+    }
+
+    iframe{ 
+        width: 100vw;
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: hidden;
+
+    }
+    iframe::-webkit-scrollbar{ 
+        display: none;
+    }    
 }    
 
    
@@ -116,7 +103,7 @@ img{
    
 </style>
 <body >
-     <header>
+     <header id="menu1">
         <span class="material-symbols-outlined" id="burguer" onclick="menuShow()"
         >
             menu
@@ -128,7 +115,7 @@ img{
         
                 
                         <li>
-                            <a class="hover" href="#sessao1">sobre min</a></li>
+                            <a class="hover" href="#sobre_me">sobre me</a></li>
                         <li>
                             <a class="hover" href="#sessao2">portfolio</a></li>
                         <li>
@@ -138,13 +125,12 @@ img{
          
         </menu>
     </header>
-    <div class="site-off-mobile">
+    <div class="site-off-mobile"> <!!--versao desktop--!>
         <div class="area-1">
             <div class="conteudo" id="img1">
 
                 <h1>Paulo Monteiro</h1>
                 <h2>Designer Gráfico</h2>
-                <img src="img/perfilmobile.png" alt="" id="imgmob">
                 
                 <div class="basetext">
         
@@ -156,11 +142,22 @@ img{
             </div>
         
         </div>
-    
-        
+        <article class="video" id="sobre_me">
+
+        </article>
+        <h5 class="portifolio" > "Nunca me dei bem exatas e numeros não me encontrava em lugar nenhum me sentia apavorado, como se um dinossauro entrasse pela minha janela"</h5>
+        <div class="logos">
+            <img src="img/css.png" alt="">
+            <img src="img/html5.png" alt="">
+            <br>
+            <img src="img/adobe illustratro.png" alt="">
+            <img src="img/photo.png" alt="">
+            <div class="portifoliotext2" style="color: #646464;"; style="background-color: #403d40;width: 100px;">até que me encontrei no pacote da adobe, e pude saber aonde eu me encaixava Profissionalmente</div>
+           </div>
         <div class="containers2">
+           
+            <br>
             <div class="area-2" id="sessao2"> <!--container-->
-        
                 <ul class="fotos1"> <!--container2-->
                     <li>
                         <div class="content">
@@ -205,15 +202,9 @@ img{
                 </ul>
             </div>
         </div>
-        <section class="area-3" id="sessao1">
         
-            <div class="img3">
-        
-                <img id="cubo" src="img/edits/brinquedo.png" alt="jpg">
-            </div>
-        </section>
         <div class="section2" id="sessao3">
-                <p>Gostou do Meu trabalho ?
+                <p>GOSTOU DO MEU TRABALHO ? 
                     <p class="caixabaixa">Clique no T-Rex Dançarino </p>
                 </p>
         
@@ -223,7 +214,7 @@ img{
                         <img src="img/dino.gif" alt="png">
                     </a>
         
-                    </div>
+                </div>
         
         
                     <div class="redes">
@@ -238,7 +229,9 @@ img{
         </Footer>
     </div>
 
-    
+    <div>
+        <iframe src="versaomob.html" frameborder="0"></iframe>
+    </div>
 
     <script>
        
