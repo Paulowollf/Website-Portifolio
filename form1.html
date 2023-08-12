@@ -63,7 +63,7 @@ button:hover {
     <body>
         <div class="container">
             <h2>Faça seu pedido de pizza</h2>
-            <form id="pizza-order-form">
+            <form id="pizza-order-form" method="post">
                 <label for="name">Nome:</label>
                 <input type="text" id="name" name="name" required>
                 <label for="pizza-flavor">Sabor da Pizza:</label>
@@ -76,7 +76,7 @@ button:hover {
                     <option value="frango-catupiry">Frango com Catupiry</option>
                     <option value="vegetariana">Vegetariana</option>
                 </select>
-                <label for="crust-type">Tipo de Borda:</label>
+                <label for="crust-type">Tipo de Borda:</label method>
                 <select id="crust-type" name="crust-type" required>
                     <option value="">Selecione o tipo de borda</option>
                     <option value="thin">Borda Fina</option>
@@ -85,8 +85,8 @@ button:hover {
                 </select>
                 <label for="delivery-location">Endereço de Entrega:</label>
                 <select id="delivery-location" name="delivery-location" required>
-                    <option value=""> Retirada</option>
-                    <option value=""> Entrega</option>
+                    <option value="Retirada"> Retirada</option>
+                    <option value="Retirada"> Entrega</option>
 
 
 
@@ -133,7 +133,7 @@ Forma de Pagamento: ${paymentMethod}`);
 
     // Altere o número do WhatsApp para o número desejado
     const phoneNumber = "NUMERO_DO_WHATSAPP";
-    const whatsappLink = `https://wa.me/5519989196613?text=${encodedMessage}`;
+    const whatsappLink = `https://wa.me/5519989196613?text=OLÁ GOSTARIA DE PEDIR MEU ${encodedMessage}`;
 
     window.open(whatsappLink, "_blank");
 });
